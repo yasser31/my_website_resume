@@ -78,78 +78,18 @@
 					<ul class="pull-left">
 						<li>
 							<a href="#">
-								<i class="fa fa-phone" aria-hidden="true"></i> +992 563 542
+								<i class="fa fa-phone" aria-hidden="true"></i> +213542835629
 							</a>
 						</li><!--/li-->
 						<li>
 							<a href="#">
-								<i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com
+								<i class="fa fa-envelope" aria-hidden="true"></i>friha.yasser@pm.me
 							</a>
 						</li><!--/li-->
 					</ul><!--/ul-->
 				</div><!--/.header-left -->
 				<div class="header-right pull-right">
 					<ul>
-						<li class="reg">
-							<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
-								Register
-							</a>
-								/
-							<a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
-								Log in
-							</a>
-							
-							<!-- small modal -->
-							<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-								<div class="modal-dialog modal-sm" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											 	<span aria-hidden="true">
-											 		<i class="fa fa-close"></i>
-											 	</span>
-											 </button> 
-											<h4 class="modal-title" id="mySmallModalLabel">
-												Sign In
-											</h4> 
-											<form class="sm-frm" style="padding:25px">
-												<label>Name :</label>
-												<input type="text" class="form-control" placeholder="Enter Email">
-												<label>Passoward :</label>
-												<input type="text" class="form-control" placeholder="Enter Passoward">
-												<label><input type="checkbox" name="personality"> Remenber Me</label>
-												<button type="button" class="btn btn-default pull-right">Submit</button>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- large modal -->
-							<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											 	<span aria-hidden="true">
-											 		<i class="fa fa-close"></i>
-											 	</span>
-											</button>  
-											<h4 class="modal-title" id="myLargeModalLabel">Register</h4> 
-											<form class="lg-frm" style="padding:25px">
-												<label>Name :</label>
-												<input type="text" class="form-control" placeholder="Enter Name">
-												<label>Email :</label>
-												<input type="text" class="form-control" placeholder="Enter Email">
-												<label>Passoward :</label>
-												<input type="text" class="form-control" placeholder="Enter Passoward">
-												<button type="button" class="btn btn-default pull-right">Submit</button>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li><!--/li -->
 						<li>
 							<div class="social-icon">
 								<ul>
@@ -182,7 +122,7 @@
 								<span class="icon-bar"></span>
 							</button>
 							<a class="navbar-brand" href="index.html">
-								<img src="assets/images/logo/logo.png" alt="logo">
+								<img src="{% static 'dashboard/images/logo/logo.png' %}" alt="logo">
 							</a>
 						</div><!--/.navbar-header -->
 
@@ -194,19 +134,6 @@
 								<li><a href="service.html">Service</a></li>
 								<li><a href="project.html">Project</a></li>
 								<li><a href="contact.html">Contact</a></li>
-								<li>
-									<a href="#">
-										<span class="lnr lnr-cart"></span>
-									</a>
-								</li>
-								<li class="search">
-									<form action="">
-										<input type="text" name="search" placeholder="Search....">
-										<a href="#">
-											<span class="lnr lnr-magnifier"></span>
-										</a>
-									</form>
-								</li>
 							</ul><!-- / ul -->
 						</div><!-- /.navbar-collapse -->
 					</nav><!--/nav -->
@@ -238,14 +165,7 @@
 											<p>
 												We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems. 
 											</p>
-											<button type="button" class="slide-btn">
-											get started
-											</button>
-											<button type="button"  class="slide-btn">
-												explore more
-											</button>
-											
-										</div><!-- /.single-slide-item-content-->
+									</div><!-- /.single-slide-item-content-->
 									</div><!-- /.col-->
 								</div><!-- /.row-->
 							</div><!-- /.container-->
@@ -263,13 +183,6 @@
 											<p>
 												We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems.  
 											</p>
-											<button type="button"  class="slide-btn">
-												get started
-											</button>
-											<button type="button"  class="slide-btn
-											">
-												explore more
-											</button>
 										</div><!-- /.single-slide-item-content-->
 									
 									</div><!-- /.col-->
@@ -308,7 +221,7 @@
 									<div class="we-do-description">
 										<div class="we-do-info">
 											<div class="we-do-img">
-												<img src="assets/images/home/consultency.png" alt="image of consultency" />
+												<img src="{% static 'dashboard/images/home/consultency.png' %}" alt="image of consultency" />
 											</div><!--/.we-do-img-->
 											<div class="we-do-topics">
 												<h2>
@@ -393,17 +306,13 @@
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
 									</p>
-									<div class="project-btn">
-										<a href="#"  class="project-view">learn more
-										</a>
-									</div><!--/.project-btn-->
 								</div><!--/.about-us-txt-->
 							</div><!--/.single-about-us-->
 						</div><!--/.col-->
 						<div class="col-sm-6">
 							<div class="single-about-us">
 								<div class="about-us-img">
-									<img src="assets/images/about/about-part.jpg" alt="about images">
+									<img src="{% static 'dashboard/images/about/about-part.jpg' %}" alt="about images">
 								</div><!--/.about-us-img-->
 							</div><!--/.single-about-us-->
 						</div><!--/.col-->
@@ -659,10 +568,6 @@
 						</div><!--/.gallery-content-->
 					</div><!--/.project-content-->
 				</div><!--/.project-details-->
-				<div class="project-btn text-center">
-					<a href="project.html"  class="project-view">view all
-					</a>
-				</div><!--/.project-btn-->
 			</div><!--/.container-->
 
 		</section><!--/.project-->
@@ -686,17 +591,17 @@
 											<div class="contact-office-address">
 												<h3>contact info</h3>
 												<p>
-													125, Park street avenue, Brocklyn, Newyork.
+													02, Cité 82 logements, El Kerma , Oran.
 												</p>
 												<div class="contact-online-address">
 													<div class="single-online-address">
 														<i class="fa fa-phone"></i>
-														+11253678958
+														+213542835629
 													</div><!--/.single-online-address-->
 													
 													<div class="single-online-address">
 														<i class="fa fa-envelope-o"></i>
-														<span>info@mail.com</span>
+														<span>friha.yasser@pm.me</span>
 													</div><!--/.single-online-address-->
 												</div><!--/.contact-online-address-->
 											</div><!--/.contact-office-address-->
@@ -807,54 +712,10 @@
 									<ul class="">
 										<li><a href="index.html" >Home</a></li>
 										<li><a href="about.html">About</a></li>
-										<li><a href="services.html">Service</a></li>
 										<li><a href="portfolio.html">Portfolio</a></li>
-										<li><a href="blog.html">Blog</a></li>
 										<li><a href="contact.html">Contact us</a></li> 
 									</ul>
 								</div><!-- /.footer-menu-->
-							</div><!--/.hm-footer-widget-->
-						</div><!--/.col-->
-						<div class=" col-md-3 col-sm-6 col-xs-12">
-							<div class="hm-footer-widget">
-								<div class="hm-foot-title">
-									<h4>from the news</h4>
-								</div><!--/.hm-foot-title-->
-								<div class="hm-para-news">
-									<a href="blog_single.html">
-										The Pros and Cons of Starting an Online Business.
-									</a>
-									<span>12th June 2017</span>
-								</div><!--/.hm-para-news-->
-								<div class="footer-line">
-									<div class="border-bottom"></div>
-								</div>
-								<div class="hm-para-news">
-									<a href="blog_single.html">
-										The Pros and Cons of Starting an Online Business.
-									</a>
-									<span>12th June 2017</span>
-								</div><!--/.hm-para-news-->
-							</div><!--/.hm-footer-widget-->
-						</div><!--/.col-->
-						<div class=" col-md-3 col-sm-6  col-xs-12">
-							<div class="hm-footer-widget">
-								<div class="hm-foot-title">
-									<h4> Our Newsletter</h4>
-								</div><!--/.hm-foot-title-->
-								<div class="hm-foot-para">
-									<p class="para-news">
-										Subscribe to our newsletter to get the latest News and offers..
-									</p>
-								</div><!--/.hm-foot-para-->
-								<div class="hm-foot-email">
-									<div class="foot-email-box">
-										<input type="text" class="form-control" placeholder="Email Address">
-									</div><!--/.foot-email-box-->
-									<div class="foot-email-subscribe">
-										<button type="button" >go</button>
-									</div><!--/.foot-email-icon-->
-								</div><!--/.hm-foot-email-->
 							</div><!--/.hm-footer-widget-->
 						</div><!--/.col-->
 					</div><!--/.row-->
