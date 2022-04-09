@@ -1,0 +1,7 @@
+{% extends 'dashboard/base.html'%}
+{% block success %}
+<div class="mx-auto my-4 text-center">
+    <h1 class="fw-bolder text-success my-6"> Thank you for message</h1>
+    <p class="my-5">You can send another in the <a href="{% url 'dashboard:index' %}">contact page</a></p>
+</div>
+{% endblock %}

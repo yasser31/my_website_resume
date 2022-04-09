@@ -1,0 +1,106 @@
+{% load crispy_forms_tags %}
+<section class="contact" id="contact">
+	<div class="container">
+		<div class="contact-details">
+			<div class="section-header contact-head  text-center">
+				<h2>contact us</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p>
+			</div>
+			<!--/.section-header-->
+			<div class="contact-content">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-5">
+						<div class="single-contact-box">
+							<div class="contact-right">
+								<div class="contact-adress">
+									<div class="contact-office-address">
+										<h3>contact info</h3>
+										<p>
+											02, Cité 82 logements, El Kerma , Oran.
+										</p>
+										<div class="contact-online-address">
+											<div class="single-online-address">
+												<i class="fa fa-phone"></i>
+												+213542835629
+											</div>
+											<!--/.single-online-address-->
+
+											<div class="single-online-address">
+												<i class="fa fa-envelope-o"></i>
+												<span>friha.yasser@pm.me</span>
+											</div>
+											<!--/.single-online-address-->
+										</div>
+										<!--/.contact-online-address-->
+									</div>
+									<!--/.contact-office-address-->
+									<div class="contact-office-address">
+										<h3>social partner</h3>
+										<div class="contact-icon">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+												</li>
+												<!--/li-->
+												<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+												</li>
+												<!--/li-->
+												<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+												</li>
+												<!--/li-->
+												<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+												</li>
+												<!--/li-->
+											</ul>
+											<!--/ul-->
+										</div>
+										<!--/.contact-icon-->
+									</div>
+									<!--/.contact-office-address-->
+
+								</div>
+								<!--/.contact-address-->
+							</div>
+							<!--/.contact-right-->
+						</div>
+						<!--/.single-contact-box-->
+					</div>
+					<!--/.col-->
+					<div class="col-sm-5">
+						<div class="single-contact-box">
+							<div class="contact-form">
+								<h3>Leave us a Massage Here</h3>
+								<form action="" method="post">
+									{% csrf_token %}
+									{{ form | crispy }}
+									<!--/.row-->
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="single-contact-btn pull-right">
+												<button class="contact-btn" type="submit">send message</button>
+											</div>
+											<!--/.single-single-contact-btn-->
+										</div>
+										<!--/.col-->
+									</div>
+									<!--/.row-->
+								</form>
+								<!--/form-->
+							</div>
+							<!--/.contact-form-->
+						</div>
+						<!--/.single-contact-box-->
+					</div>
+					<!--/.col-->
+				</div>
+				<!--/.row-->
+			</div>
+			<!--/.contact-content-->
+		</div>
+		<!--/.contact-details-->
+	</div>
+	<!--/.container-->
+
+</section>
